@@ -1,0 +1,94 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(view.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Header Styling */
+#heading {
+    margin: 20px;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(90, 20, 150, 0.8);
+}
+
+/* Input Field */
+#val {
+    width: 80%;
+    max-width: 400px;
+    height: 60px;
+    margin: 20px auto;
+    padding: 10px;
+    font-size: 1.5rem;
+    text-align: right;
+    border: 2px solid rgba(90, 20, 150, 0.8);
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Calculator Buttons */
+table {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+button {
+    width: 80px;
+    height: 60px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+/* Button Colors */
+button:hover {
+    filter: brightness(1.2);
+}
+
+button.operator {
+    background-color: rgba(90, 20, 150, 0.8);
+    color: white;
+}
+
+button.number {
+    background-color: rgba(220, 220, 220, 1);
+}
+
+#equal {
+    background-color: rgba(200, 150, 120, 1);
+    color: white;
+}
+
+/* Result Display */
+#result {
+    text-align: center;
+    font-size: 1.8rem;
+    color: rgba(10, 220, 100, 1.0);
+    margin-top: 20px;
+}
+
+/* Hide Section */
+.hidden {
+    display: none;
+}
