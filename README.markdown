@@ -56,12 +56,3 @@ basic-calculator/
 - **Maintainable**: Clear variable names and comments enhance readability.
 - **Portable**: Runs in any modern web browser without dependencies.
 
-### Additional Notes
-- The calculator uses a custom expression parser to avoid direct use of `eval()` for safer evaluation, though `eval()` is used as a fallback in the provided code.
-- The background image (`view.jpg`) should be placed in the project directory for the CSS to work correctly.
-- Future enhancements could include keyboard input support or advanced functions like square root or memory features.
-
-### Submission Details
-- **GitHub Repository**: [Insert your GitHub repo link here]
-- **Live Demo**: [Insert live demo link if hosted, e.g., on GitHub Pages]
-- **Contact**: For queries, reach out to [Your Email].
