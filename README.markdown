@@ -10,10 +10,11 @@ This is a web-based Basic Calculator developed as part of the Unified Mentor Int
 
 ### Features
 - **Basic Arithmetic Operations**: Supports addition (+), subtraction (-), multiplication (*), division (/), and modulo (%).
-- **Error Handling**: Displays messages like "Check your input" for invalid expressions or "Not valid" for non-mathematical inputs.
+- **Error Handling**: Displays messages like "Error: Division by zero" or "Not valid" for invalid inputs.
 - **Clear Functions**: Includes "AC" (All Clear) to reset the calculator and "C" (Clear) to remove the last input.
-- **Responsive Design**: Works on both desktop and mobile devices with a centered layout.
-- **Visual Feedback**: Displays results in green and uses a semi-transparent input field for clarity.
+- **Responsive Design**: Adapts to various screen sizes using percentage-based button widths and media queries.
+- **Visual Feedback**: Displays results prominently in the input field in green text with a bold, clear style.
+- **Logging**: Logs all user actions (button clicks, errors) to the console for debugging.
 
 ### Setup Instructions
 1. **Clone the Repository**:
@@ -33,12 +34,12 @@ This is a web-based Basic Calculator developed as part of the Unified Mentor Int
    - Click the number buttons (0-9) and operator buttons (+, -, *, /, %) to build an expression in the input field.
    - Example: To calculate `5 + 3`, click `5`, `+`, `3`, then `=`.
 2. **Calculate Result**:
-   - Press the `=` button to evaluate the expression. The result appears below the input field.
+   - Press the `=` button to evaluate the expression. The result appears in the input field.
 3. **Clear Input**:
-   - Use `AC` to reset the entire input and result.
+   - Use `AC` to reset the entire input.
    - Use `C` to delete the last character entered.
 4. **Error Handling**:
-   - If an invalid expression is entered (e.g., `5/0` or `5++3`), the calculator displays "Check your input" or "Not valid".
+   - Invalid expressions (e.g., `5/0` or `5++3`) display error messages like "Error: Division by zero" or "Not valid" in the input field.
 
 ### Project Structure
 ```
@@ -50,9 +51,10 @@ basic-calculator/
 ```
 
 ### Code Quality
-- **Modular**: The JavaScript code uses a separate `evaluateExpression` function for parsing and calculating expressions.
-- **Safe**: Error handling prevents crashes from invalid inputs.
-- **Testable**: The code is structured to allow unit testing of the `evaluateExpression` function.
-- **Maintainable**: Clear variable names and comments enhance readability.
+- **Modular**: Separate `evaluateExpression` function for parsing and calculating expressions.
+- **Safe**: Avoids `eval` and uses custom parser for secure evaluation.
+- **Testable**: Structured for unit testing of `evaluateExpression`.
+- **Maintainable**: Clear variable names and comments for readability.
 - **Portable**: Runs in any modern web browser without dependencies.
+- **Logging**: Console logs for all user actions and errors.
 

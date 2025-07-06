@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Calculator</title>
+    <title>Calculator</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -13,8 +13,8 @@
     <input type="text" id="val" readonly>
     <table>
         <tr>
-            <td><button id="allclear">AC</button></td>
-            <td><button id="clear">C</button></td>
+            <td><button id="allclear" class="operator">AC</button></td>
+            <td><button id="clear" class="operator">C</button></td>
             <td><button id="mod" class="operator">%</button></td>
             <td><button id="divi" class="operator">/</button></td>
         </tr>
@@ -39,12 +39,9 @@
         <tr>
             <td><button class="number">0</button></td>
             <td><button class="number">.</button></td>
-            <td><button id="equal">=</button></td>
+            <td><button id="equal" class="operator">=</button></td>
         </tr>
     </table>
-    <div class="res hidden">
-        <p>The calculation Result is: <span class="display"></span></p>
-    </div>
     <script src="script.js"></script>
 </body>
 
